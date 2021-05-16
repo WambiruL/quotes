@@ -5,7 +5,6 @@
   <title>Quotes</title>
   <base href="/">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta http-equiv="Refresh" content="2; url=public/index.html">
   <link rel="icon" type="image/x-icon" href="favicon.ico">
 </head>
 <body>
