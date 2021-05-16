@@ -15,6 +15,9 @@ export class QuoteComponent implements OnInit {
     new Quotes(1, "Life","Life is smooth","Lorraine"),
   ]
 
+  toggleDetails(index){
+    this.quotes[index].showInfo=!this.quotes[index].showInfo;
+  }
   constructor() { }
 
   ngOnInit(): void {
