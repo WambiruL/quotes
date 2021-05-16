@@ -15,6 +15,19 @@ This is an angular cli application that shows quotes and the user is able to inp
 
 4.code . or atom . based on the text editor you have.
 
+# Technologies Used
+Typescript 
+
+HTML
+
+CSS
+
+Javascript
+
+Boostrap
+
+Angular CLI
+
 # Live site
 
 # Copyright and license information
