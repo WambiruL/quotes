@@ -1,9 +1,10 @@
 <div>
   <h1>NUGGETZ</h1>
   <ul>
-    <li *ngFor='let quote of quotes'>
-          {{quotes.title}}
+    <div *ngFor='let quote of quotes; let i= index'>
+        <li>{{quotes.title}}</li>
+        <button (click)='toggleDetail(i)'>Show More</button>
       <app-quotes-detail [quotes]='quote'></app-quotes-detail>
-    </li>
+    </div>
   </ul>
 </div>
