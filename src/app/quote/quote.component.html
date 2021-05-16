@@ -1,6 +1,9 @@
 <div>
   <h1>NUGGETZ</h1>
   <ul>
-    <li *ngFor='let quote of quotes'></li>
+    <li *ngFor='let quote of quotes'>
+      {{quotes.title}}
+      <app-quotes-detail [quotes]='quote'></app-quotes-detail>
+    </li>
   </ul>
 </div>
