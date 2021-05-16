@@ -13,6 +13,9 @@ export class QuoteComponent implements OnInit {
     new Quotes(1, "Lorraine","Life","Life is smooth","Someone", new Date(2021,3,30), 0, 0),
     new Quotes(1, "Lorraine","Life","Life is smooth","Someone", new Date(2021,3,30), 0, 0),
     new Quotes(1, "Lorraine","Life","Life is smooth","Someone", new Date(2021,3,30), 0, 0),
+    new Quotes(1, "Lorraine","Life","Life is smooth","Someone", new Date(2021,3,30), 0, 0),
+    new Quotes(1, "Lorraine","Life","Life is smooth","Someone", new Date(2021,3,30), 0, 0),
+
   ]
 
   get quote(){
@@ -32,7 +35,7 @@ addNewQuote(quote){
   }
   deleteQuote(notWanted, index){
     if(notWanted){
-      let toDelete=confirm(`Are you sure you want to delete ${this.quotes[index].title}?`)
+      let toDelete=confirm(`Are you sure you want to delete quote?`)
 
       if(toDelete){
         this.quotes.splice(index, 1)

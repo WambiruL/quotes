@@ -9,15 +9,16 @@ import { Component, Input, OnInit, EventEmitter, Output } from '@angular/core';
 export class QuotesDetailComponent implements OnInit {
 
   @Input() quotes:Quotes |any;
-  @Output() notWanted= new EventEmitter<boolean>();
-  quoteDelete(remove:boolean){
-    this.notWanted.emit(remove)
-  }
+
    upvote(){
-     this.quotes.likes+=1;
+     this.quotes.upvotes+=1;
    }
    downvote(){
-     this.quotes.dislikes+=1;
+     this.quotes.downvotes+=1;
+   }
+   @Output() notWanted= new EventEmitter<boolean>();
+   quoteDelete(remove:boolean){
+     this.notWanted.emit(remove)
    }
   constructor() { }
 
