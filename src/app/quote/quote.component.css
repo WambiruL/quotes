@@ -3,7 +3,8 @@ h1{
   font-weight: bolder;
   padding-top: 2%;
   padding-bottom: 2%;
-  color:rgba(123, 218, 111, 0.658);
+  color:rgba(236, 243, 227, 0.658);
+  font-family: 'Goblin One', cursive;
 }
 
 .all-cards{
@@ -30,6 +31,9 @@ h1{
 }
 #quotes-button{
   float: right;
+}
+.title{
+  color: rgb(184, 126, 19);
 }
 .card{
   margin-bottom: 2%;

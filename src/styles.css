@@ -1,11 +1,10 @@
 /* You can add global styles to this file, and also import other style files */
 @import "~bootstrap/dist/css/bootstrap.css";
 @import "~font-awesome/css/font-awesome.css";
-@import url('https://fonts.googleapis.com/css2?family=Courgette&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Courgette&family=Goblin+One&display=swap');
 body{
   font-family: 'Courgette', cursive;
-  background-image: url("../src/assets/bg2.gif");
+  background-image: url("../src/assets/gif.gif");
   background-attachment: fixed;
   background-size: cover;
 

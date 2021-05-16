@@ -9,12 +9,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class QuoteComponent implements OnInit {
   quotes: Quotes[]=[
-    new Quotes(1, "Lorraine","Life","Life is smooth","Someone", new Date(2021,3,30), 0, 0),
-    new Quotes(1, "Lorraine","Life","Life is smooth","Someone", new Date(2021,3,30), 0, 0),
-    new Quotes(1, "Lorraine","Life","Life is smooth","Someone", new Date(2021,3,30), 0, 0),
-    new Quotes(1, "Lorraine","Life","Life is smooth","Someone", new Date(2021,3,30), 0, 0),
-    new Quotes(1, "Lorraine","Life","Life is smooth","Someone", new Date(2021,3,30), 0, 0),
-    new Quotes(1, "Lorraine","Life","Life is smooth","Someone", new Date(2021,3,30), 0, 0),
+    new Quotes(1, "Lorraine","Contemporary Life","You can doubt one plus one, but you cannot doubt 2 because it is the answer","Major 1", new Date(2021,5,16), 0, 0),
+    new Quotes(1, "Lorraine","Spirituality","God is your greatest leverage","Elvin Vanuel", new Date(2021,5,16), 0, 0),
+    new Quotes(1, "Lorraine","Music","Music gives a soul to the universe, wings to the mind, flight to the imagination, and life to everything.","Plato", new Date(2021,5,16), 0, 0),
+    new Quotes(1, "Lorraine","Food","If you are afraid of butter, use cream","Julia Child", new Date(2021,5,16), 0, 0),
+    new Quotes(1, "Lorraine","Fashion","Fashion is the armor to survive the reality of everyday life.","Bill Cunningham", new Date(2021,5,16), 0, 0),
+    new Quotes(1, "Lorraine","Technology","It has become appallingly obvious that our technology has exceeded our humanity.","Albert Einstein", new Date(2021,5,16), 0, 0),
 
   ]
 
