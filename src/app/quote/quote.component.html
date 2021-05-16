@@ -2,6 +2,7 @@
   <h1>NUGGETZ</h1>
   <ul>
     <div *ngFor='let quote of quotes; let i= index'>
+      {{quotes.author}}
         <button (click)='toggleDetails(i)'>Show More</button>
       <app-quotes-detail [quotes]='quote'></app-quotes-detail>
     </div>
