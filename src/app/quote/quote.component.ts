@@ -1,6 +1,7 @@
 import { Quotes } from './../quotes';
 import { Component, OnInit } from '@angular/core';
 import { Quote } from '@angular/compiler';
+import { globalAgent } from 'http';
 
 @Component({
   selector: 'app-quote',
@@ -27,6 +28,13 @@ export class QuoteComponent implements OnInit {
         this.quotes.splice(index, 1)
       }
     }
+  }
+
+  addNewQuote(quote){
+    let quoteLength=this.quotes.length;
+    quote.id=quoteLength+1;
+    quote.datePosted=new Date(quote.datePosted)
+    this.quotes.push(quote)
   }
   constructor() { }
 

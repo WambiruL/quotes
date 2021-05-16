@@ -5,6 +5,6 @@
       <app-quotes-detail *ngIf='quote.showInfo' [quotes]='quotes'(notWanted)= 'deleteQuote($event,i)'></app-quotes-detail>
       <h4>Posted by: {{quote.author}} on: {{quote.datePosted}}</h4>
     </div>
-    <app-quotes-form></app-quotes-form>
+    <app-quotes-form (addQuote)="addNewQuote($event)"></app-quotes-form>
 
 </div>
