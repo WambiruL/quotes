@@ -5,7 +5,6 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { QuoteComponent } from './quote/quote.component';
 import { QuotesDetailComponent } from './quotes-detail/quotes-detail.component';
-import { DatePipe } from './date.pipe';
 import { DateCountPipe } from './date-count.pipe';
 import { HighlightDirective } from './highlight.directive';
 import { QuotesFormComponent } from './quotes-form/quotes-form.component';
@@ -16,7 +15,6 @@ import { FormsModule } from '@angular/forms';
     AppComponent,
     QuoteComponent,
     QuotesDetailComponent,
-    DatePipe,
     DateCountPipe,
     HighlightDirective,
     QuotesFormComponent
