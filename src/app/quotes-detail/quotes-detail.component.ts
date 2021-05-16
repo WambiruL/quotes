@@ -13,7 +13,12 @@ export class QuotesDetailComponent implements OnInit {
   quoteDelete(remove:boolean){
     this.notWanted.emit(remove)
   }
-
+   upvote(){
+     this.quotes.likes+=1;
+   }
+   downvote(){
+     this.quotes.dislikes+=1;
+   }
   constructor() { }
 
   ngOnInit(): void {

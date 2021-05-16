@@ -3,7 +3,7 @@
     <div *ngFor='let quote of quotes; let i= index'>
         <h4 appHighlight>{{quote.title}} {{quote.upvotes}}<button (click)='toggleDetails(i)'>Show More</button></h4>
       <app-quotes-detail *ngIf='quote.showInfo' [quotes]='quotes'(notWanted)= 'deleteQuote($event,i)'></app-quotes-detail>
-      <h4>Posted by: {{quote.author}} on: {{quote.datePosted}}</h4>
+      <h4>Posted by: {{quote.author}} on: {{quote.datePosted|date:'short'}}</h4>
     </div>
     <app-quotes-form (addQuote)="addNewQuote($event)"></app-quotes-form>
 

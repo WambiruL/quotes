@@ -1,7 +1,6 @@
 import { Quotes } from './../quotes';
 import { Component, OnInit } from '@angular/core';
-import { Quote } from '@angular/compiler';
-import { globalAgent } from 'http';
+
 
 @Component({
   selector: 'app-quote',
@@ -16,10 +15,21 @@ export class QuoteComponent implements OnInit {
     new Quotes(1, "Life","Life is smooth","Lorraine",new Date(2021,3,30),0,0),
   ]
 
+  get quote(){
+    return this.quotes.sort((a,b)=>{
+      return <any> new Date(b.datePosted)-<any> new Date(a.datePosted);
+    })
+  }
   toggleDetails(index){
     this.quotes[index].showInfo=!this.quotes[index].showInfo;
   }
 
+addNewQuote(quote){
+    let quoteLength=this.quotes.length;
+    quote.id=quoteLength+1;
+    quote.datePosted=new Date(quote.datePosted)
+    this.quotes.push(quote)
+  }
   deleteQuote(notWanted, index){
     if(notWanted){
       let toDelete=confirm(`Are you sure you want to delete ${this.quotes[index].title}?`)
@@ -30,12 +40,7 @@ export class QuoteComponent implements OnInit {
     }
   }
 
-  addNewQuote(quote){
-    let quoteLength=this.quotes.length;
-    quote.id=quoteLength+1;
-    quote.datePosted=new Date(quote.datePosted)
-    this.quotes.push(quote)
-  }
+
   constructor() { }
 
   ngOnInit(): void {
