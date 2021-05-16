@@ -7,13 +7,17 @@ WambiruL
 This is an angular cli application that shows quotes and the user is able to input quotes of his or her own, downvote or upvote a quote and even delete it.
 
 # Installation/set-up instruction
-Open Terminal {Ctrl+Alt+T}
+1.Open Terminal {Ctrl+Alt+T}
 
-git clone https://github.com/WambiruL/quotes.git
+2.git clone https://github.com/WambiruL/quotes.git
 
-cd quotes
+3 cd quotes
 
-code . or atom . based on the text editor you have.
+4.code . or atom . based on the text editor you have.
 
 # Live site
 
+# Copyright and license information
+Copyright &#169; 2021 Lorraine Wambui
+
+This website has been licensed by MIT
