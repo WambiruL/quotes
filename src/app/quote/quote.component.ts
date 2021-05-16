@@ -9,10 +9,10 @@ import { Quote } from '@angular/compiler';
 })
 export class QuoteComponent implements OnInit {
   quotes: Quotes[]=[
-    new Quotes(1, "Life","Life is smooth","Lorraine", new Date(2021,3,30)),
-    new Quotes(1, "Life","Life is smooth","Lorraine",new Date(2021,3,30)),
-    new Quotes(1, "Life","Life is smooth","Lorraine",new Date(2021,3,30)),
-    new Quotes(1, "Life","Life is smooth","Lorraine",new Date(2021,3,30)),
+    new Quotes(1, "Life","Life is smooth","Lorraine", new Date(2021,3,30), 0, 0),
+    new Quotes(1, "Life","Life is smooth","Lorraine",new Date(2021,3,30),0,0),
+    new Quotes(1, "Life","Life is smooth","Lorraine",new Date(2021,3,30),0,0),
+    new Quotes(1, "Life","Life is smooth","Lorraine",new Date(2021,3,30),0,0),
   ]
 
   toggleDetails(index){
