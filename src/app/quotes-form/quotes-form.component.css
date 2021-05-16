@@ -1,0 +1,21 @@
+.form-control{
+  color: beige;
+  background: transparent;
+  font-weight: 450;
+}
+label{
+  color: white;
+  font-weight: 600;
+}
+.heading{
+  color: white;
+  text-align: center;
+  padding-top: 2%;
+}
+.container-fluid{
+  background-color: rgb(7, 82, 53);
+  border-radius: 4px;
+  padding-bottom: 5%;
+  margin-bottom: 5%;
+  line-height: 200%;
+}
