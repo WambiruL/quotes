@@ -1,10 +1,9 @@
 <div>
   <h1>NUGGETZ</h1>
-  <ul>
     <div *ngFor='let quote of quotes; let i= index'>
-
-        <button (click)='toggleDetails(i)'>Show More</button>
-      <app-quotes-detail *ngIf='quote.showInfo' [quotes]='quote'(notWanted)= 'deleteQuote($event,i)'></app-quotes-detail>
+        <h4 appHighlight>{{quote.title}} {{quote.upvotes}}<button (click)='toggleDetails(i)'>Show More</button></h4>
+      <app-quotes-detail *ngIf='quote.showInfo' [quotes]='quotes'(notWanted)= 'deleteQuote($event,i)'></app-quotes-detail>
+      <h4>Posted by: {{quote.author}} on: {{quote.datePosted}}</h4>
     </div>
-  </ul>
+
 </div>

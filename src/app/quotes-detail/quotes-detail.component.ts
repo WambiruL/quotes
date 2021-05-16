@@ -1,5 +1,5 @@
 import { Quotes } from './../quotes';
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, Input, OnInit, EventEmitter, Output } from '@angular/core';
 
 @Component({
   selector: 'app-quotes-detail',
@@ -9,6 +9,10 @@ import { Component, Input, OnInit } from '@angular/core';
 export class QuotesDetailComponent implements OnInit {
 
   @Input() quotes:Quotes |any;
+  @Output() notWanted= new EventEmitter<boolean>();
+  quoteDelete(remove:boolean){
+    this.notWanted.emit(remove)
+  }
 
   constructor() { }
 
