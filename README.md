@@ -28,8 +28,6 @@ Boostrap
 
 Angular CLI
 
-# Live site
-
 # Copyright and license information
 Copyright &#169; 2021 Lorraine Wambui
 
